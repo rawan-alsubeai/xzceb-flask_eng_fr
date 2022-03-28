@@ -4,7 +4,7 @@ class tastenglishToFrench(unittest.TestCase):
     def test1(self): 
         text= None
         masg="enter text"
-        self.assertIsNone(english_to_french(text),masg)
+        self.assertNotEqual(english_to_french(text),masg)
     def test2(self):
         eng="Hello"
         frch="Bonjour"
@@ -15,7 +15,7 @@ class testfrenchToEnglish(unittest.TestCase):
     def test3(self):
         text2= None
         masg2="enter text"
-        self.assertIsNone(french_to_english(text2),masg2)
+        self.assertNotEqual(french_to_english(text2),masg2)
     def test4(self): 
         eng2="Hello"
         frch2="Bonjour"
